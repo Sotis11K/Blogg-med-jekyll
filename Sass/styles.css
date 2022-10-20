@@ -51,7 +51,8 @@ main .starting-navbar .navbar-item:first-child {
 
 .right-bar {
   right: 0;
-  background-color: red;
+  background-color: purple;
+  z-index: 8;
   height: 100vh;
   width: 10vw;
   position: absolute;

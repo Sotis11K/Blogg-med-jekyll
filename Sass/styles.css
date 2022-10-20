@@ -1,6 +1,5 @@
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,30 +9,50 @@ body, html {
   height: 100%;
 }
 
-.starting-image .starting-navbar {
+.full-screen-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to left, blue, white);
+}
+
+main {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+}
+main .starting-navbar {
   background-color: black;
   height: 80px;
   width: 100%;
   color: white;
   font-size: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
   gap: 100px;
   text-align: center;
 }
-
-.starting-image .starting-navbar .navbar-item {
+main .starting-navbar .navbar-item {
   text-decoration: none;
 }
-
-.starting-image .starting-navbar .navbar-item:first-child {
+main .starting-navbar .navbar-item:first-child {
   background-color: red;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.left-bar {
+  left: 0;
+  height: 100vh;
+  width: 10vw;
+  position: absolute;
+  background-color: red;
+}
+
+.right-bar {
+  right: 0;
+  background-color: red;
+  height: 100vh;
+  width: 10vw;
+  position: absolute;
+}/*# sourceMappingURL=styles.css.map */
